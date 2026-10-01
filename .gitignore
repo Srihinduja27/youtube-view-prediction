@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Raw Kaggle data (large) - download from
+# https://www.kaggle.com/datasets/datasnaek/youtube-new
+data/raw/*.csv
+data/raw/*.json
+
+# Generated processed data
+data/processed/*.csv
+data/processed/*.npy
+
+# Generated model artifacts
+models/*.pkl
+
+# Generated outputs/logs/artifacts
+outputs/*
+logs/*
+artifacts/*
+
+# MLflow
+mlruns/
+mlflow.db
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Keep project directories in Git
+!data/raw/.gitkeep
+!models/.gitkeep
+!outputs/.gitkeep
+!logs/.gitkeep
+!artifacts/.gitkeep
+!data/processed/.gitkeep
+!data/processed/dataset_metadata.json

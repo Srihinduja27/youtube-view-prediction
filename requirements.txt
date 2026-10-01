@@ -1,0 +1,17 @@
+pandas==2.3.3
+numpy==2.4.6
+scikit-learn==1.9.0
+xgboost==3.2.0
+mlflow==3.15.2
+pandera==0.32.1
+matplotlib==3.11.1
+seaborn==0.13.2
+joblib==1.5.3
+scipy==1.17.1
+skops==0.14.0
+jupyter==1.1.1
+ipykernel==7.3.0
+notebook==7.6.1
+cloudpickle==3.1.2
+pyarrow==25.0.1
+statsmodels>=0.14  # used by the notebook P-value (OLS) section

@@ -1,0 +1,34 @@
+{
+    "dataset_name": "YouTube Trending Video Statistics",
+    "target": "log1p(views)",
+    "train_shape": [
+        300753,
+        19
+    ],
+    "test_shape": [
+        75189,
+        19
+    ],
+    "numerical_features": [
+        "category_id",
+        "comments_disabled",
+        "ratings_disabled",
+        "video_error_or_removed",
+        "days_to_trending",
+        "publish_year",
+        "publish_month",
+        "publish_day",
+        "publish_dayofweek",
+        "publish_hour",
+        "trending_year",
+        "trending_month",
+        "trending_day",
+        "trending_dayofweek",
+        "title_length",
+        "title_word_count",
+        "description_length",
+        "description_word_count",
+        "tag_count"
+    ],
+    "categorical_features": []
+}
