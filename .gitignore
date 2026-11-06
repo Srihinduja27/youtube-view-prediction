@@ -41,3 +41,6 @@ Thumbs.db
 !artifacts/.gitkeep
 !data/processed/.gitkeep
 !data/processed/dataset_metadata.json
+
+deployment/*.pkl
+!deployment/.gitkeep

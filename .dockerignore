@@ -1,0 +1,12 @@
+﻿venv/
+__pycache__/
+*.pyc
+.git/
+.gitignore
+.vscode/
+tests/
+notebooks/
+mlruns/
+artifacts/*.png
+outputs/
+logs/

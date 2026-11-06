@@ -1,0 +1,40 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: youtube-prediction-api
+  labels:
+    app: youtube-prediction-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: youtube-prediction-api
+  template:
+    metadata:
+      labels:
+        app: youtube-prediction-api
+    spec:
+      containers:
+      - name: youtube-api
+        image: youtube-prediction-api:model-v1
+        ports:
+        - containerPort: 8000
+        resources:
+          limits:
+            cpu: "1000m"
+            memory: "1Gi"
+          requests:
+            cpu: "250m"
+            memory: "256Mi"
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 15
+          periodSeconds: 20
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 10
+          periodSeconds: 10

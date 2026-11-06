@@ -1,0 +1,10 @@
+{
+    "model_name": "YouTube_Views_Production_Model",
+    "model_version": "1",
+    "model_stage": "Production",
+    "run_id": "840be2d375c84c28b49afb73c1f8d7c2",
+    "target": "views",
+    "target_transform": "log1p(views)",
+    "timestamp": "2026-11-06T17:50:32.768109+00:00",
+    "source": "MLflow"
+}
